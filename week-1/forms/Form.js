@@ -18,7 +18,7 @@ function App() {
             placeholder="Name"
             name='name'
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={e => {setName(e.target.value)}}
             />
           </div>
           <button disabled={!name} type="submit">Submit</button>
